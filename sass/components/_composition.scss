@@ -1,0 +1,32 @@
+.composition {
+  position: relative;
+
+  &__photo {
+    width: 55%;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.2s;
+
+    &--1 {
+      left: 0;
+      top: -0.5rem;
+    }
+    &--2 {
+      top: 2rem;
+      right: 0;
+    }
+
+    &--3 {
+      top: 16rem;
+      right: 30%;
+    }
+    &:hover {
+      transform: scale(1.05);
+      z-index: 20;
+      transform: translateY(-2rem);
+    }
+  }
+  &:hover &__photo:not(:hover) {
+    transform: scale(0.95);
+  }
+}
