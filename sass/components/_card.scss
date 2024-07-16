@@ -37,6 +37,7 @@
 
     &--front {
       background-color: $color-white;
+      overflow: hidden;
     }
     &--back {
       transform: rotateY(180deg);
@@ -70,6 +71,7 @@
     background-size: cover;
     height: 20rem;
     background-position: center;
+
     &--1 {
       background-image: url(../../img/nat-5.jpg);
     }

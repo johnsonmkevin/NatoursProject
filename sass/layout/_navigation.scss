@@ -8,12 +8,23 @@
     width: 7rem;
     border-radius: 50%;
     position: fixed;
-    top: 3rem;
+    top: 4rem;
     right: 6rem;
     z-index: 2000;
     box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
     text-align: center;
     cursor: pointer;
+
+    @include respond(big-desktop) {
+      top: 6rem;
+    }
+    @include respond(tab-land) {
+      top: 6rem;
+      right: 6rem;
+    }
+    @include respond(tab-port) {
+      top: 3.2rem;
+    }
   }
   &__background {
     z-index: 1000;
@@ -21,11 +32,22 @@
     width: 6rem;
     border-radius: 50%;
     position: fixed;
-    top: 3rem;
+    top: 4rem;
     right: 6.5rem;
     background-image: radial-gradient($primary-forest-blue-light, $primary-forest-blue);
     /*  transform: scale(90); */
     transition: transform 0.8s;
+
+    @include respond(big-desktop) {
+      top: 6rem;
+    }
+    @include respond(tab-land) {
+      top: 6rem;
+      right: 6.5rem;
+    }
+    @include respond(tab-port) {
+      top: 3.5rem;
+    }
   }
   &__nav {
     height: 100vh;

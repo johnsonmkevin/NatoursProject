@@ -12,14 +12,31 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  overflow-x: hidden;
+
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+  /*   @include respond(phone) {
+    font-size: 40%;
+  } */
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
 }
 
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-family: "Lato", sans-serif;
-  margin: 1.2rem 1.2rem 0 1.2rem;
+  padding: 3rem;
   color: $color-grey-dark;
+  @include respond(tab-port) {
+    padding: 0;
+  }
 }
 
 img,

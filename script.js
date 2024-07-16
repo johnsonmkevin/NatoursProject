@@ -4,18 +4,12 @@ const openModalBtn = document.querySelectorAll(".open-modal");
 const closeModalBtn = document.querySelector(".modal__close");
 const modalEl = document.querySelector(".modal");
 
-const openModal = () => {
-  modalEl.style.visibility = "visible";
-  modalEl.style.opacity = 1;
+const toggleModal = (visible) => {
+  modalEl.style.visibility = visible ? "visible" : "hidden";
+  modalEl.style.opacity = visible ? 1 : 0;
+  modalEl.style.transform = visible ? "scale(1)" : "";
 };
 
-const closeModal = () => {
-  modalEl.style.visibility = "hidden";
-  modalEl.style.opacity = 0;
-};
+openModalBtn.forEach((btn) => btn.addEventListener("click", () => toggleModal(true)));
 
-for (let i = 0; i < openModalBtn.length; i++) {
-  openModalBtn[i].addEventListener("click", openModal);
-}
-
-closeModalBtn.addEventListener("click", closeModal);
+closeModalBtn.addEventListener("click", () => toggleModal(false));

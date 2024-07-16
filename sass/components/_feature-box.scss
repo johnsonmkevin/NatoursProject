@@ -4,6 +4,11 @@
   text-align: center;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
   border-radius: 3px;
+  svg {
+    height: 6rem;
+    width: 6rem;
+    stroke-width: 0.7;
+  }
 
   p {
     line-height: 1.8;
@@ -12,8 +17,8 @@
   }
 
   &__icon {
-    width: 12rem;
-    height: 12rem;
+    width: 8rem;
+    height: 8rem;
     display: inline-block;
     stroke: $primary-forest-blue;
   }

@@ -10,6 +10,14 @@
   color: white;
   background-size: cover;
   letter-spacing: 0.2rem;
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
 }
 
 .heading-tertiary {
