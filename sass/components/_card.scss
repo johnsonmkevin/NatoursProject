@@ -59,6 +59,12 @@
       &--explorer::after {
         background: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
       }
+      &--hiker::after {
+        background: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+      }
+      &--snow::after {
+        background: linear-gradient(to right bottom, $primary-forest-blue, $secondary-forest-blue);
+      }
     }
     &--back {
       transform: rotateY(180deg);
