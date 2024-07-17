@@ -41,17 +41,23 @@
       position: relative;
       text-align: center;
       &::after {
-        content: "297 USD";
+        content: "297$";
         position: absolute;
-        top: 0;
-        right: 0;
-
-        padding: 1.6rem 1.2rem;
+        top: 1rem;
+        right: -4rem;
+        color: $color-white;
         text-transform: uppercase;
         background-color: $color-white;
-        font-size: 1.7rem;
+        font-size: 2rem;
         font-weight: 600;
         background-color: #5a8cff;
+        transform: rotate(30deg);
+        /*         width: 10rem; */
+        padding: 0rem 6rem;
+      }
+
+      &--explorer::after {
+        background: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
       }
     }
     &--back {
