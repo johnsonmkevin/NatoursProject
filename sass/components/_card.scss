@@ -38,6 +38,21 @@
     &--front {
       background-color: $color-white;
       overflow: hidden;
+      position: relative;
+      text-align: center;
+      &::after {
+        content: "297 USD";
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        padding: 1.6rem 1.2rem;
+        text-transform: uppercase;
+        background-color: $color-white;
+        font-size: 1.7rem;
+        font-weight: 600;
+        background-color: #5a8cff;
+      }
     }
     &--back {
       transform: rotateY(180deg);
