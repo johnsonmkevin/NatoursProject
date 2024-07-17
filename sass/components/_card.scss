@@ -25,11 +25,14 @@
       &:first-of-type li {
         margin-top: 2rem;
       }
+      li:last-child {
+        margin-bottom: 5rem;
+      }
     }
   }
 
   &__side {
-    height: 60rem;
+    height: 70rem;
     transition: all 0.8s ease-in-out;
     color: black;
     font-size: 2rem;

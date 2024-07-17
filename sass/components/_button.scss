@@ -47,6 +47,36 @@
       left: 0;
     }
   }
+  &-orange {
+    color: white;
+    background: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+    &::after {
+      background: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  &-purple {
+    color: white;
+    background: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+    &::after {
+      background: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  &-sky {
+    color: white;
+    background: linear-gradient(to right bottom, $primary-forest-blue, $secondary-forest-blue);
+    &::after {
+      background: linear-gradient(to right bottom, $primary-forest-blue, $secondary-forest-blue);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
 
   &-white {
     color: $color-grey-dark;
