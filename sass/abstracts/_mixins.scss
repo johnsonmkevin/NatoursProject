@@ -32,6 +32,35 @@
 
 //conversion to ems
 
+@mixin button-primary($main-color, $background-color) {
+  color: $main-color;
+  background-color: $background-color;
+  &::after {
+    background-color: $background-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+@mixin button-styles($color-light, $color-dark) {
+  color: white;
+  background: linear-gradient(to right bottom, $color-light, $color-dark);
+  &::after {
+    background: linear-gradient(to right bottom, $color-light, $color-dark);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+@mixin card-text-styles($color-text) {
+  font-weight: 600;
+  font-size: 1.6rem;
+  transform: skewX(12deg);
+  color: $color-text;
+}
+
 @mixin respond($breakpoint) {
   @if $breakpoint == small-phone {
     @media (max-width: 25em) {

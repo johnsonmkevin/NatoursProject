@@ -76,7 +76,7 @@
       top: 0;
       backface-visibility: hidden;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-around;
       align-items: center;
       flex-direction: column;
       &--1 {
@@ -101,6 +101,7 @@
     background-size: cover;
     height: 20rem;
     background-position: center;
+    position: relative;
 
     &--1 {
       background-image: url(../../img/nat-5.jpg);
@@ -111,6 +112,25 @@
     &--3 {
       background-image: url(../../img/nat-7.jpg);
     }
+    &--container {
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%, -50%) skewX(-12deg);
+      padding: 0.8rem 0.8rem;
+      width: 70%;
+      text-transform: uppercase;
+      background-color: $color-white;
+    }
+    &--text--1 {
+      @include card-text-styles($color-secondary-dark);
+    }
+    &--text--2 {
+      @include card-text-styles($color-tertiary-dark);
+    }
+    &--text--3 {
+      @include card-text-styles($color-tertiary-light);
+    }
   }
   &__cta {
     display: flex;
@@ -120,13 +140,16 @@
     height: 100%;
     text-align: center;
     color: white;
+
     &--details {
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
       margin-top: 4rem;
+      margin-top: 18rem;
     }
     &--price {
       font-size: 7rem;
       font-weight: 200;
+      margin-bottom: 10rem;
     }
   }
 }

@@ -38,56 +38,21 @@
   }
 
   &-aqua {
-    color: white;
-    background-color: $primary-forest-blue;
-    &::after {
-      background-color: $primary-forest-blue;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
+    @include button-primary($color-white, $primary-forest-blue);
   }
   &-orange {
-    color: white;
-    background: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
-    &::after {
-      background: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
+    @include button-styles($color-secondary-light, $color-secondary-dark);
   }
+
   &-purple {
-    color: white;
-    background: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
-    &::after {
-      background: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
+    @include button-styles($color-tertiary-light, $color-tertiary-dark);
   }
   &-sky {
-    color: white;
-    background: linear-gradient(to right bottom, $primary-forest-blue, $secondary-forest-blue);
-    &::after {
-      background: linear-gradient(to right bottom, $primary-forest-blue, $secondary-forest-blue);
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
+    @include button-styles($primary-forest-blue, $secondary-forest-blue);
   }
 
   &-white {
-    color: $color-grey-dark;
-    background-color: $color-white;
-
-    &::after {
-      background-color: $color-white;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
+    @include button-primary($color-grey-dark, $color-white);
   }
   &-text {
     font-weight: 600;
