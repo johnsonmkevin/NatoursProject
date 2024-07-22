@@ -16,7 +16,8 @@
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10vh;
-  @include respond(phone) {
+
+  @include respond(tab-port) {
     padding: 15rem 0;
   }
 
