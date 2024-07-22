@@ -57,8 +57,12 @@
   &-text {
     font-weight: 600;
     font-size: 1.8rem;
+    text-align: center;
   }
   &-form {
+    margin-top: 2.2em;
+    display: inline-flex;
+    gap: 0.6em;
     @include respond(tab-land) {
       margin-top: 1em;
     }

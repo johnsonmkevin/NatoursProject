@@ -20,3 +20,9 @@ openModalBtn.forEach((btn) => btn.addEventListener("click", () => toggleModal(tr
 closeModalBtn.addEventListener("click", () => toggleModal(false));
 
 navigationEl.forEach((n) => n.addEventListener("click", () => toggleNav(true)));
+
+window.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    toggleModal(false);
+  }
+});

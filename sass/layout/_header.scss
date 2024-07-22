@@ -1,6 +1,6 @@
 .header {
   background-image: linear-gradient(to bottom, rgba(83, 81, 81, 0.323), rgba(70, 69, 69, 0.12)),
-    url(../../img/hero.jpg);
+    url(../../img/hero-small.jpg);
   @include respond(small-phone) {
     height: 100vh;
   }
@@ -11,6 +11,11 @@
   background-position: top center;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    background-image: linear-gradient(to bottom, rgba(83, 81, 81, 0.323), rgba(70, 69, 69, 0.12)),
+      url(../../img/hero.jpg);
+  }
 
   @include respond(small-phone) {
     clip-path: polygon(0 0, 100% 0, 100% 100vh, 0 100%);
