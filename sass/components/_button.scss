@@ -58,4 +58,9 @@
     font-weight: 600;
     font-size: 1.8rem;
   }
+  &-form {
+    @include respond(tab-land) {
+      margin-top: 1em;
+    }
+  }
 }
