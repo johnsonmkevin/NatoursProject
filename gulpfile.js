@@ -2,10 +2,14 @@ const { src, dest, watch, series } = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
+const concat = require("gulp-concat");
+const cleanCSS = require("gulp-clean-css");
 function compileSass() {
   return src("sass/**/*.scss") // Source folder containing Sass files
     .pipe(sass().on("error", sass.logError)) // Compile Sass and log errors
     .pipe(postcss([autoprefixer()]))
+    .pipe(cleanCSS({ compatibility: "ie8" })) // Compress/minify CSS
+    .pipe(concat("all.css")) // Concatenate all CSS files into all.css
     .pipe(dest("css")); // Destination folder for compiled CSS
 }
 
