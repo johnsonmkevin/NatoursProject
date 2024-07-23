@@ -11,7 +11,7 @@
 .section-features {
   padding: 20rem 0;
   background-image: linear-gradient(to bottom, rgba(27, 27, 27, 0.323), rgba(39, 38, 38, 0.12)),
-    url(../../img/nat-4.jpg);
+    url(../img/nat-4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   transform: skewY(-7deg);
@@ -49,7 +49,7 @@
       rgba($color-white, 0.9) 66%,
       transparent 50%
     ),
-    url(../../img/nat-10.jpg);
+    url(../img/nat-10.jpg);
   background-size: 100%;
   height: 50rem;
   border-radius: 3px;
@@ -61,7 +61,7 @@
         rgba($color-white, 0.9) 65%,
         transparent 65%
       ),
-      url(../../img/nat-10.jpg);
+      url(../img/nat-10.jpg);
     background-size: cover;
   }
   @include respond(tab-port) {
@@ -71,7 +71,7 @@
         rgba($color-white, 0.9) 100%,
         transparent 65%
       ),
-      url(../../img/nat-10.jpg);
+      url(../img/nat-10.jpg);
     background-size: cover;
   }
   &__form {
