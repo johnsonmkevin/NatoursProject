@@ -26,3 +26,5 @@ window.addEventListener("keydown", (event) => {
     toggleModal(false);
   }
 });
+
+modalEl.addEventListener("click", () => toggleModal(false));
